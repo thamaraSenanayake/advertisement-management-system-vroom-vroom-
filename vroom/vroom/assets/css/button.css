@@ -1,0 +1,21 @@
+.butonConatiner{
+  height: 30px;
+}
+
+.button{
+  height: 30px;
+  width: 100px;
+  float: right;
+  background-color: #35A7FF;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  border: 2px solid #35A7FF;
+}
+
+.button:hover{
+  color: #35A7FF;
+  background-color: #fff;
+
+}

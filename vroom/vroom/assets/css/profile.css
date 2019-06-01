@@ -1,0 +1,195 @@
+.head{
+  height: 100px;
+  background-color: #2A1649;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{
+  width: 220px;
+  float: left;
+  height: 100px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.logoClass{
+  width: auto;
+  height: 100px;
+}
+.rightHeder{
+  width: calc(100% - 220px);
+  /* background-color:blue; */
+  height: 100px;
+  float: left;
+}
+
+.rightHederTop{
+  height: 50px;
+  /* background-color: yellow; */
+}
+
+.rightHederBottom{
+  height: 50px;
+  /* background-color: pink; */
+}
+
+.paddingClass{
+  float: right;
+  margin-right: 20px !important;
+}
+
+.searchBtn{
+  width: 100px;
+  border: 2px solid #fff;
+  height: 40px;
+  position: absolute;
+  right: 5px;
+  margin-top: 2px;
+
+}
+
+.rightHederTop{
+  position: relative;
+}
+
+.profilePicContainer{
+  height: 300px;
+  background-color: #D9D9D9;
+  overflow: hidden;
+}
+
+.profilePic{
+  height: auto;
+  width: 100%;
+  display: block;
+  margin:auto;
+}
+
+.containerThree{
+  /* height: 300px; */
+  /* background-color: red; */
+  margin-top: 50px;
+}
+
+.containerThreeInner{
+  height: 300px;
+  width: 80%;
+  margin: auto;
+  /* background-color: black; */
+}
+
+.containerThreeInnerTitle{
+  margin-bottom: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  color: #fff;
+  background-color: #2A1649;
+  padding-left: 50px;
+}
+
+.containerThreeInnerContainer{
+  width: 33.3%;
+  float: left;
+  /* border: 1px solid blue; */
+  height: 190px;
+  position: relative;
+}
+
+.containerThreeInnerImageContainer{
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid black;
+  position: absolute;
+
+}
+
+.containerThreeInnerImage{
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.containerThreeInnerImageImage{
+  height: 100%;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.containerThreeInnerImageDescription{
+  color: #fff;
+  background-color: #35A7FF;
+  height: 20%;
+  text-align: center;
+}
+
+.topnav a {
+    width: 15%;
+  }
+
+.topnav a:hover {
+    background-color: #D9D9D9;
+    color: black;
+    width: 16%;
+
+}
+
+.more{
+  float: right;
+  text-decoration:underline;
+  /* font-size: 15px; */
+}
+
+
+.feedBackDisplayContainer{
+  height: 50px;
+}
+
+.feedBackDisplay{
+  height: 50px;
+  float: right;
+  width: 300px;
+  /* background-color: red; */
+}
+
+.feedBackWordContainer{
+  float: left;
+  width: 100px;
+  height: 50px;
+  /* background-color: yellow; */
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+
+}
+
+.positive{
+  color: green;
+}
+
+.neagative{
+  color: red;
+}
+
+.feedBackNumContainer{
+  font-size: 20px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  /* background-color: yellow; */
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+
+.positiveNum{
+  background-color: green;
+}
+
+.neagativeNum{
+  background-color: red;
+}

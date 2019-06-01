@@ -1,0 +1,147 @@
+.head{
+  height: 100px;
+  background-color: #2A1649;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{
+  width: 220px;
+  float: left;
+  height: 100px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.logoClass{
+  width: auto;
+  height: 100px;
+}
+.rightHeder{
+  width: calc(100% - 220px);
+  /* background-color:blue; */
+  height: 100px;
+  float: left;
+}
+
+.rightHederTop{
+  height: 50px;
+  /* background-color: yellow; */
+}
+
+.rightHederBottom{
+  height: 50px;
+  /* background-color: pink; */
+}
+
+.paddingClass{
+  float: right;
+  margin-right: 20px !important;
+}
+
+.searchBtn{
+  width: 100px;
+  border: 2px solid #fff;
+  height: 40px;
+  position: absolute;
+  right: 5px;
+  margin-top: 2px;
+
+}
+
+.rightHederTop{
+  position: relative;
+}
+
+.container{
+  height: calc(100vh - 100px);
+
+}
+
+.containerLeft{
+  height: 100%;
+  width: 70%;
+  float: left;
+}
+
+.containerRight{
+  height: 100%;
+  width: 30%;
+  background-color: #2A1649;
+  float: left;
+  /* -webkit-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 5px 0px rgba(0,0,0,0.75); */
+
+}
+
+.containerTitle{
+  font-size: 30px;
+  margin-left: 30px;
+  height: 150px;
+  line-height: 150px;
+}
+
+.containerInputContainer{
+  width: 80%;
+  margin: auto;
+}
+
+.sizeBox{
+  height: 20px;
+}
+
+.butonConatiner{
+  height: 30px;
+}
+
+.button{
+  height: 30px;
+  width: 100px;
+  float: right;
+  background-color: #35A7FF;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  border: 2px solid #35A7FF;
+}
+
+.button:hover{
+  color: #35A7FF;
+  background-color: #fff;
+
+}
+
+.sizeBoxExtraLarge{
+  height:70px;
+}
+
+.containerRightImageContainer{
+  margin: auto;
+  margin-top: 50px;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.containerRightImage{
+  height: 100%;
+  width: 100%;
+}
+
+.containerRightDescription{
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.uderLine{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#signinPage{
+  display: none;
+}

@@ -1,0 +1,44 @@
+/* Full-width input fields */
+textarea{
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 0px 0;
+  display: inline-block;
+  border: none;
+  background:  #eff5f5;
+  font-size: 13px;
+  resize: none;
+  height: 70px;
+}
+::placeholder {
+  font-size: 15px;
+  font-style: italic;
+}
+textarea:focus, {
+  background-color: #ddd;
+  outline: none;
+}
+
+.labelClass_textarea{
+  width: 20%;
+  display: inline-block;
+  font-size: 13px;
+  float: left;
+  margin-top: 5px;
+}
+
+.outer_textarea{
+  margin-top: 22px;
+}
+
+
+@media (max-width:600px) {
+  .labelClass_textarea{
+    width: 100%;
+    display: block;
+  }
+  textarea {
+    width: 96%;
+    margin-left: 2%;
+  }
+}

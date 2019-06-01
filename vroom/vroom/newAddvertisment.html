@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/basc.css">
+  <link rel="stylesheet" href="assets/css/_textbox.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/radio.css">
+  <link rel="stylesheet" href="assets/css/newAddvertisment.css">
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/base.js"></script>
+  <script src="assets/js/newAddvertisment.js"></script>
+
+</head>
+
+<body>
+  <div class="body">
+    <div class="head">
+      <div class="logo">
+        <img src="assets/img/logo.jpg" alt="logo" class="logoClass">
+      </div>
+      <div class="rightHeder">
+        <div class="rightHederTop">
+          <div class="outer">
+            <div id="nameDisplay" class="errorDisplay"></div>
+
+            <!-- <input type="text" placeholder="Enter full name Here...." id="name" class="medium_text paddingClass"> -->
+            <!-- <div class="searchBtn"></div> -->
+          </div>
+        </div>
+
+        <div class="rightHederBottom">
+          <div class="navbar">
+            <div class="topnav">
+              <a href="home.html" id="" >Home</a>
+              <a href="myAddvertisment.html" id="myAddvertisment">My Addvertisment</a>
+              <a href="sallerPage.html" id="profile">Profile</a>
+              <a href="newAddvertisment.html" id="TaskTab" class="active">New Addvertisment</a>
+              <a href="notification.html" id="TaskTab" >Notification</a>
+              <a href="userSettings.html" id="TaskTab">Settings</a>
+              <a class="logoutButton" onclick="logout()">Logout</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+
+        <div class="containerInputContainer">
+          <!-- <img src="http://192.168.8.100:8080/first/webapi/getImage?location=images-1.jpg" alt=""> -->
+          <form enctype="multipart/form-data" action="http://192.168.8.100:8080/first/webapi/insertAdd" method="post" id="addAddvertisment">
+
+
+            <div class="outer">
+              <div id="brandDisplay" class="errorDisplay"></div>
+              <label for="full_name" class="labelClass"><b>Brand</b></label>
+              <input type="text" placeholder="Enter your vehical's brand here...." id="brand" class="large_text">
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="outer">
+              <div id="modelDisplay" class="errorDisplay"></div>
+              <label for="full_name" class="labelClass"><b>Model</b></label>
+              <input type="text" placeholder="Enter your vehical's model here...." id="model" class="large_text">
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="outer">
+              <label for="gender" class="labelClassRadio"><b>vehical type</b></label>
+
+              <div class="outer_radio_container">
+                <div id="brandDisplay" class="errorDisplay"></div>
+                <label class="radioContainer">Hatchback
+                  <input type="radio" checked="checked" name="vehicalType" class="vehicalType" id="hatchback" value="hatchback">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">MPV
+                  <input type="radio" name="vehicalType" class="vehicalType" id="mpv" value="mpv">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">SUV
+                  <input type="radio" name="vehicalType" class="vehicalType" id="SUV" value="SUV">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">Sedan
+                  <input type="radio" name="vehicalType" class="vehicalType" id="sedan" value="sedan">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+
+
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="outer">
+              <label for="gender" class="labelClassRadio"><b>Condition</b></label>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">Brand new
+                  <input type="radio" checked="checked" name="condition" class="condition" id="new" value="new">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">Used
+                  <input type="radio" name="condition" class="condition" id="used" value="used">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+            </div>
+
+            <div class="sizeBox"></div>
+
+
+            <div class="outer">
+              <div id="yearDisplay" class="errorDisplay"></div>
+              <label for="full_name" class="labelClass"><b>Year</b></label>
+              <input type="text" placeholder="Enter vehical's manufacture year here...." id="year" class="small_text">
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="outer">
+              <label for="gender" class="labelClassRadio"><b>Fuel Type</b></label>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">Disel
+                  <input type="radio" checked="checked" name="fuel" class="genderRadio" id="disel" value="diesel">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">Patrol
+                  <input type="radio" name="fuel" class="genderRadio" id="patrol" value="petrol">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">Hybrid
+                  <input type="radio" name="fuel" class="genderRadio" id="hybrid" value="hybrid">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="outer">
+              <label for="gender" class="labelClassRadio"><b>Transmisstion</b></label>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">Auto
+                  <input type="radio" checked="checked" name="transmisstion" class="genderRadio" id="auto" value="auto">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="outer_radio_container">
+                <label class="radioContainer">Manual
+                  <input type="radio" name="transmisstion" class="genderRadio" id="manual" value="manual">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="outer">
+              <div id="capacityDisplay" class="errorDisplay"></div>
+              <label for="full_name" class="labelClass"><b>Engine Capacity</b></label>
+              <input type="text" placeholder="Enter your vehical's engine capacity here...." id="capacity" class="small_text">
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="outer">
+              <div id="milageDisplay" class="errorDisplay"></div>
+              <label for="full_name" class="labelClass"><b>Milage</b></label>
+              <input type="text" placeholder="Enter your vehical's milage here...." id="milage" class="small_text">
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="outer">
+              <div id="priceDisplay" class="errorDisplay"></div>
+              <label for="full_name" class="labelClass"><b>Price</b></label>
+              <input type="text" placeholder="Enter your vehical price here...." id="price" class="small_text">
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="takeImageContainer">
+              <div id="fileDisplay" class="errorDisplay"></div>
+              <div for="full_name" class="addImageLable"><b>Add Image</b></div>
+              <input type="file" placeholder="Enter your vehical's milage here...." id="file" name="file" class="small_text" accept="image/*">
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="imageRow">
+              <div class="imageRowDescription" ></div>
+              <div class="imageRowImageCover">
+                <img src="" alt="" class="imageRowImage" id="imageRowImage">
+              </div>
+            </div>
+
+            <div class="sizeBox"></div>
+
+            <div class="loadingImageContainer">
+              <img src="assets/img/loading.gif" alt="" class="loadingImage">
+            </div>
+
+            <div class="butonConatiner">
+              <div class="button" id="submit">Submit</div>
+            </div>
+
+            <div class="sizeBox"></div>
+
+          </form>
+
+
+        </div>
+
+
+    </div>
+
+    <div id="dbError" class="errorDisplay"></div>
+
+
+
+  </div>
+
+
+</body>
+</html>

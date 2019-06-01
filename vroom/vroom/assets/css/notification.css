@@ -1,0 +1,164 @@
+.head{
+  height: 100px;
+  background-color: #2A1649;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{
+  width: 220px;
+  float: left;
+  height: 100px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.logoClass{
+  width: auto;
+  height: 100px;
+}
+.rightHeder{
+  width: calc(100% - 220px);
+  /* background-color:blue; */
+  height: 100px;
+  float: left;
+}
+
+.rightHederTop{
+  height: 50px;
+  /* background-color: yellow; */
+}
+
+.rightHederBottom{
+  height: 50px;
+  /* background-color: pink; */
+}
+
+.paddingClass{
+  float: right;
+  margin-right: 20px !important;
+}
+
+.searchBtn{
+  width: 100px;
+  border: 2px solid #fff;
+  height: 40px;
+  position: absolute;
+  right: 5px;
+  margin-top: 2px;
+
+}
+
+.rightHederTop{
+  position: relative;
+}
+
+
+.sizeBox{
+  height: 20px;
+}
+
+
+.butonConatiner{
+  margin-top: 50px;
+}
+
+.button{
+  margin-right: 10px;
+}
+
+#edit{
+  background-color: #6BF178;
+  border: 2px solid #6BF178;
+}
+
+#edit:hover{
+  color: #6BF178;
+  background-color: #fff;
+}
+
+#delete{
+  background-color: #FF5964;
+  border: 2px solid #FF5964;
+
+}
+
+
+#delete:hover{
+  color: #FF5964;
+  background-color: #fff;
+}
+
+.loadingDisplay{
+  height: 300px;
+}
+
+.loadingImage{
+  margin: auto;
+  height: 300px;
+  width: auto;
+  display:block;
+}
+
+.commentContanerAppend{
+
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.vehicalDetailContainer{
+  font-size: 16px;
+  text-align: left;
+
+}
+
+.bottom{
+  width: 80%;
+  padding: 50px 0px;
+  margin: auto;
+}
+
+.floatDivContainer{
+  height: 300px;
+  border-bottom: 2px solid #D9D9D9;
+}
+
+.commentContaner{
+  margin-bottom: 20px;
+  border: 2px solid;
+  padding: 10px;
+
+}
+
+.Comenter{
+  font-weight: 900;
+}
+
+.comment{
+  padding-left: 10px;
+}
+
+.commentSubmitButtonContainer{
+  padding: 10px 0px;
+}
+
+.commentSumbitButton{
+  width: 100px;
+  background-color: #35A7FF;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  float: right;
+  border: 2px solid #35A7FF;
+  cursor: pointer;
+}
+
+.commentSumbitButton:hover{
+  background-color: #fff;
+  color: #35A7FF;
+}
+
+.dateContainer{
+  float: right;
+}

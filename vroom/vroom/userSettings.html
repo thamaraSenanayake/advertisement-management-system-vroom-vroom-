@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/basc.css">
+  <link rel="stylesheet" href="assets/css/_textbox.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/radio.css">
+  <link rel="stylesheet" href="assets/css/userSettings.css">
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/base.js"></script>
+  <script src="assets/js/userSettings.js"></script>
+
+</head>
+
+<body>
+  <div class="body">
+    <div class="head">
+      <div class="logo">
+        <img src="assets/img/logo.jpg" alt="logo" class="logoClass">
+      </div>
+      <div class="rightHeder">
+        <div class="rightHederTop">
+          <div class="outer">
+            <div id="nameDisplay" class="errorDisplay"></div>
+          </div>
+        </div>
+
+        <div class="rightHederBottom">
+          <div class="navbar">
+            <div class="topnav">
+              <a href="home.html" id="" >Home</a>
+              <a href="myAddvertisment.html" id="myAddvertisment">My Addvertisment</a>
+              <a href="sallerPage.html" id="profile">Profile</a>
+              <a href="newAddvertisment.html" id="TaskTab" >New Addvertisment</a>
+              <a href="notification.html" id="TaskTab" >Notification</a>
+              <a href="userSettings.html" id="TaskTab" class="active" >Settings</a>
+              <a class="logoutButton" onclick="logout()">Logout</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+
+        <div class="containerInputContainer">
+          <!-- <img src="http://192.168.8.100:8080/first/webapi/getImage?location=images-1.jpg" alt=""> -->
+          <form enctype="multipart/form-data" action="http://192.168.8.100:8080/first/webapi/insertAdd" method="post" id="addAddvertisment">
+
+            <div class="title">Genral Settings</div>
+
+            <form id="genralSettingsForm">
+
+              <div class="outer">
+                <div id="telDisplay" class="errorDisplay"></div>
+                <label for="full_name" class="labelClass"><b>Tel:</b></label>
+                <input type="text" placeholder="Enter your phone number...." id="tel" class="large_text">
+              </div>
+
+              <div class="sizeBox"></div>
+
+              <div class="outer">
+                <div id="addressDisplay" class="errorDisplay"></div>
+                <label for="full_name" class="labelClass"><b>Address:</b></label>
+                <input type="text" placeholder="Enter your address...." id="address" class="large_text">
+              </div>
+
+              <div id="genralSettingsError" class="errorDisplay"></div>
+
+              <div class="butonConatiner">
+                <div class="button" id="genralSettings">Update</div>
+              </div>
+
+            </form>
+
+            <div class="sizeBox"></div>
+            <div class="title">Change Password</div>
+
+            <form id="changePasswordFrom">
+
+              <div class="outer">
+                <div id="currentPasswordDisplay" class="errorDisplay"></div>
+                <label for="full_name" class="labelClass"><b>Current password:</b></label>
+                <input type="password" placeholder="Enter current password...." id="currentPassword" class="large_text">
+              </div>
+
+              <div class="sizeBox"></div>
+
+              <div class="outer">
+                <div id="newPasswordDisplay" class="errorDisplay"></div>
+                <label for="full_name" class="labelClass"><b>New password:</b></label>
+                <input type="password" placeholder="Enter new password" id="newPassword" class="large_text">
+              </div>
+
+              <div class="sizeBox"></div>
+
+              <div class="outer">
+                <div id="confirmPasswordDisplay" class="errorDisplay"></div>
+                <label for="full_name" class="labelClass"><b>Confirm password:</b></label>
+                <input type="password" placeholder="Confirm password" id="confirmPassword" class="large_text">
+              </div>
+
+              <div id="changePasswordError" class="errorDisplay"></div>
+
+              <div class="butonConatiner">
+                <div class="button" id="changePassword">Update</div>
+              </div>
+
+            </form>
+
+
+            <div id="coverUpdateCover" class="displayHide">
+
+              <form id="coverUpdateCoverForm">
+
+                <div class="sizeBox"></div>
+
+                <div class="title">Change Cover Photo</div>
+
+                <div class="takeImageContainer">
+                  <div id="fileDisplay" class="errorDisplay"></div>
+                  <div for="full_name" class="addImageLable"><b>Add Image</b></div>
+                  <input type="file" placeholder="Enter your vehical's milage here...." id="file" name="file" class="small_text" accept="image/*">
+                </div>
+
+                <div class="sizeBox"></div>
+
+                <div class="imageRow">
+                  <div class="imageRowDescription" ><b></b></div>
+                  <div class="imageRowImageCover">
+                    <img src="" alt="" class="imageRowImage" id="imageRowImage">
+                  </div>
+                </div>
+
+                <div id="changeCoverPhotoError" class="errorDisplay"></div>
+
+                <div class="butonConatiner">
+                  <div class="button" id="changeCoverPhoto">Update</div>
+                </div>
+
+              </form>
+
+            </div>
+
+
+            <div class="sizeBox"></div>
+
+          </form>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

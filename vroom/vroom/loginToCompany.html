@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/basc.css">
+  <link rel="stylesheet" href="assets/css/_textbox.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/loginToCompany.css">
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/base.js"></script>
+  <script src="assets/js/loginToCompany.js"></script>
+
+</head>
+
+<body>
+  <div class="body">
+    <div class="head">
+      <div class="logo">
+        <img src="assets/img/logo.jpg" alt="logo" class="logoClass">
+      </div>
+      <div class="rightHeder">
+        <div class="rightHederTop">
+          <div class="outer">
+            <div id="nameDisplay" class="errorDisplay"></div>
+
+            <input type="text" placeholder="Enter full name Here...." id="name" class="medium_text paddingClass">
+            <!-- <div class="searchBtn"></div> -->
+          </div>
+        </div>
+
+        <div class="rightHederBottom">
+          <div class="navbar">
+            <div class="topnav">
+              <a href="index.html" id="DashboardTab">Search Vehicale</a>
+              <a href="addMyCarToSale.html">Add my car to sale</a>
+              <a href="login.html" id="TaskTab">Log in as user</a>
+              <a href="loginToCompany.html" id="TaskTab" class="active">Log in to car sale</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container" id="loginPage">
+      <div class="containerLeft">
+        <div class="containerTitle">
+            Log in to company
+        </div>
+
+        <div class="containerInputContainer">
+
+          <div class="outer">
+            <div id="comanyNameDisplay" class="errorDisplay"></div>
+            <label for="full_name" class="labelClass"><b>Company Name</b></label>
+            <input type="text" placeholder="Enter your email address here...." id="comanyName" class="large_text">
+          </div>
+
+          <div class="sizeBox"></div>
+
+          <div class="outer">
+            <div id="passwordDisplay" class="errorDisplay"></div>
+            <label for="full_name" class="labelClass"><b>Password</b></label>
+            <input type="password" placeholder="Enter your password here...." id="password" class="large_text">
+          </div>
+
+          <div class="errorDisplay" id="dbErrorLogin"></div>
+
+          <div class="sizeBoxExtraLarge"></div>
+
+          <div class="butonConatiner">
+            <div class="button" id="login"> Log in</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="containerRight">
+          <div class="containerRightImageContainer">
+            <img src="assets/img/avator.svg" alt="logo" class="containerRightImage">
+          </div>
+          <div class="containerRightDescription">
+              Are you new to here ? <br/>
+              <span class="uderLine" id="moveTosignIn">
+                Click here to Register your car sale
+              </span>
+          </div>
+      </div>
+    </div>
+
+    <div class="container" id="signinPage">
+      <div class="containerLeft">
+        <div class="containerTitle">
+            Register Company
+        </div>
+
+        <div class="containerInputContainer">
+
+          <div class="outer">
+            <div id="signInCarSellnameDisplay" class="errorDisplay"></div>
+            <label for="full_name" class="labelClass"><b>Car Sale name</b></label>
+            <input type="text" placeholder="Enter your car sale name here...." id="signInCarSellname" class="large_text">
+          </div>
+
+          <div class="sizeBox"></div>
+
+          <div class="outer">
+            <div id="ownerNameDisplay" class="errorDisplay"></div>
+            <label for="full_name" class="labelClass"><b>Owner Name</b></label>
+            <input type="text" placeholder="Enter your address here...." id="ownerName" class="large_text">
+          </div>
+
+          <div class="sizeBox"></div>
+
+          <div class="outer">
+            <div id="addressDisplay" class="errorDisplay"></div>
+            <label for="full_name" class="labelClass"><b>Address</b></label>
+            <input type="text" placeholder="Enter your address here...." id="address" class="large_text">
+          </div>
+
+          <div class="sizeBox"></div>
+
+          <div class="outer">
+            <div id="telDisplay" class="errorDisplay"></div>
+            <label for="full_name" class="labelClass"><b>Tel-phone</b></label>
+            <input type="text" placeholder="Enter your tele phone number here...." id="tel" class="large_text">
+          </div>
+
+          <div class="sizeBox"></div>
+
+          <div class="outer">
+            <div id="signInEmailDisplay" class="errorDisplay"></div>
+            <label for="full_name" class="labelClass"><b>Email</b></label>
+            <input type="text" placeholder="Enter your email address here...." id="signInEmail" class="large_text">
+          </div>
+
+          <div class="sizeBox"></div>
+
+          <div class="outer">
+            <div id="signInPasswordDisplay" class="errorDisplay"></div>
+            <label for="full_name" class="labelClass"><b>Password</b></label>
+            <input type="password" placeholder="Enter your password here...." id="signInPassword" class="large_text">
+          </div>
+
+          <div class="sizeBox"></div>
+
+          <div class="outer">
+            <div id="signInConfirmPasswordDisplay" class="errorDisplay"></div>
+            <label for="full_name" class="labelClass"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Confirm password here...." id="signInConfirmPassword" class="large_text">
+          </div>
+
+          <div class="errorDisplay" id="dbErrorSign"></div>
+
+          <div class="sizeBoxExtraLarge"></div>
+
+          <div class="butonConatiner">
+            <div class="button" id="signIn">Sign in</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="containerRight">
+          <div class="containerRightImageContainer">
+            <img src="assets/img/avator.svg" alt="logo" class="containerRightImage">
+          </div>
+          <div class="containerRightDescription">
+              Do you have a account? <br/>
+              <span class="uderLine" id="moveTologIn">
+                Click here to log in to your car sale
+              </span>
+          </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</body>
+</html>

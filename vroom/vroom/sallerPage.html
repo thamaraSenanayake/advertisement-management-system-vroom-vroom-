@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/basc.css">
+  <link rel="stylesheet" href="assets/css/_textbox.css">
+  <link rel="stylesheet" href="assets/css/radio.css">
+  <link rel="stylesheet" href="assets/css/button.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/model.css">
+  <link rel="stylesheet" href="assets/css/sallerPage.css">
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/base.js"></script>
+  <script src="assets/js/sallerPage.js"></script>
+
+</head>
+
+<body>
+  <div class="body">
+    <div class="head">
+      <div class="logo">
+        <img src="assets/img/logo.jpg" alt="logo" class="logoClass">
+      </div>
+
+      <div class="rightHeder">
+        <div class="rightHederTop">
+          <div class="outer">
+            <div id="nameDisplay" class="errorDisplay"></div>
+
+            <!-- <input type="text" placeholder="Enter full name Here...." id="name" class="medium_text paddingClass"> -->
+            <!-- <div class="searchBtn"></div> -->
+          </div>
+        </div>
+
+        <div class="rightHederBottom">
+          <div class="navbar">
+            <div class="topnav">
+              <a href="home.html" id="" >Home</a>
+              <a href="myAddvertisment.html" id="myAddvertisment">My Addvertisment</a>
+              <a href="sallerPage.html" id="profile" class="active">Profile</a>
+              <a href="newAddvertisment.html" id="TaskTab" >New Addvertisment</a>
+              <a href="userSettings.html" id="TaskTab">Settings</a>
+              <a class="logoutButton" onclick="logout()">Logout</a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="deleteAddModel" class="modle">
+          <div class="modleContent">
+            <div class="modleContentInner">
+              <p id="modleText">Are you sure you want to delete this addvertisemnt?</p>
+
+
+            <div class="containerNoBtn" id="">
+                No
+            </div>
+
+            <div class="containerYesBtn" id="">
+                Yes
+            </div>
+
+
+            <div class="clearfix">
+                <button type="button" id="modelClose" class="closeBtnModel">X</button>
+            </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="container">
+      <div class="profilePicContainer">
+        <img src="assets/img/cover.jpg" alt="logo" class="profilePic" id="coverPhoto">
+      </div>
+
+      <div class="feedBackDisplayContainer">
+        <div class="feedBackDisplay">
+            <div class="feedBackWordContainer positive">
+              Posistive
+            </div>
+            <div class="feedBackNumContainer positiveNum">
+                0
+            </div>
+            <div class="feedBackWordContainer neagative">
+              Neagative
+            </div>
+            <div class="feedBackNumContainer neagativeNum">
+                0
+            </div>
+        </div>
+      </div>
+
+      <div class="sizeBox"></div>
+      <div class="vehicalDetailContainerAppend">
+        <div class="loadingDisplay">
+          <img src="assets/img/loading.gif" alt="" class="loadingImage" id="">
+        </div>
+      </div>
+      <div class="containerThree">
+
+        <div id="vehicalDetailContainerBlock" class="displayHide">
+
+          <div class="vehicalDetailContainer" id="vehicalDetailContainerIDNUM">
+            <div class="vehicalDetailContainerLeft">
+              <div class="vehicalDetailContainerLeftImageContainer">
+                <img src="SRC" alt="" class="vehicalDetailContainerLeftImage">
+              </div>
+              <span class="vehicalDetailContainerPrice">Rs. PRICE</span>
+            </div>
+            <div class="vehicalDetailContainerMiddle">
+              <div class="vehicalDetailContainerMiddleInfoContainer">
+                <div class="vehicalDetailContainerMiddleInfoContainerLeft">
+                  Brand:
+                </div>
+                <div class="vehicalDetailContainerMiddleInfoContainerRight">
+                  BRAND
+                </div>
+
+                <div class="vehicalDetailContainerMiddleInfoContainerLeft">
+                  Model:
+                </div>
+                <div class="vehicalDetailContainerMiddleInfoContainerRight">
+                  MODEL
+                </div>
+
+                <div class="vehicalDetailContainerMiddleInfoContainerLeft">
+                  Year:
+                </div>
+                <div class="vehicalDetailContainerMiddleInfoContainerRight">
+                  YEAR
+                </div>
+
+                <div class="vehicalDetailContainerMiddleInfoContainerLeft">
+                  Condition:
+                </div>
+                <div class="vehicalDetailContainerMiddleInfoContainerRight">
+                  CONDITION
+                </div>
+
+                <div class="vehicalDetailContainerMiddleInfoContainerLeft">
+                  Transmisstion:
+                </div>
+                <div class="vehicalDetailContainerMiddleInfoContainerRight">
+                  TRANSMISSTION
+                </div>
+
+                <div class="vehicalDetailContainerMiddleInfoContainerLeft">
+                  Fuel Type:
+                </div>
+                <div class="vehicalDetailContainerMiddleInfoContainerRight">
+                  FUEL
+                </div>
+
+                <div class="vehicalDetailContainerMiddleInfoContainerLeft">
+                  Capacity:
+                </div>
+                <div class="vehicalDetailContainerMiddleInfoContainerRight">
+                  CAPACITY
+                </div>
+
+                <div class="vehicalDetailContainerMiddleInfoContainerLeft">
+                  Milage:
+                </div>
+                <div class="vehicalDetailContainerMiddleInfoContainerRight">
+                  MILAGE
+                </div>
+
+              </div>
+            </div>
+            <div class="vehicalDetailContainerRight">
+              <div class="vehicalDetailContainerRightTitle">
+                Edit addvertisemnt
+              </div>
+
+              <div class="butonConatiner">
+                <div class="button" id="delete" onclick='deleteAdd(IDNUM)'>Delete</div>
+                <div class="button" id="edit" onclick='editAdd(IDNUM)'>Edit</div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="containerThreeInner displayHide" id="HatchbackContainer">
+          <div class="containerThreeInnerTitle">  Hatchback </div>
+          <div id="HatchbackContainerAppend"></div>
+        </div>
+
+        <div class="containerThreeInner displayHide" id="SedanContainer">
+          <div class="containerThreeInnerTitle">  Sedan </div>
+          <div id="SedanContainerAppend"></div>
+        </div>
+
+        <div class="containerThreeInner displayHide" id="MVPContainer">
+          <div class="containerThreeInnerTitle">  Multi purpose Vehical </div>
+          <div id="MVPContainerAppend"></div>
+        </div>
+
+        <div class="containerThreeInner displayHide" id="SUVContainer">
+          <div class="containerThreeInnerTitle">  SUV </div>
+          <div id="SUVContainerAppend"></div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+</body>
+</html>

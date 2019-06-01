@@ -1,0 +1,349 @@
+.head{
+  height: 100px;
+  background-color: #2A1649;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{
+  width: 220px;
+  float: left;
+  height: 100px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.logoClass{
+  width: auto;
+  height: 100px;
+}
+.rightHeder{
+  width: calc(100% - 220px);
+  /* background-color:blue; */
+  height: 100px;
+  float: left;
+}
+
+.rightHederTop{
+  height: 50px;
+  /* background-color: yellow; */
+}
+
+.rightHederBottom{
+  height: 50px;
+  /* background-color: pink; */
+}
+
+.paddingClass{
+  float: right;
+  margin-right: 20px !important;
+}
+
+.searchBtn{
+  width: 100px;
+  border: 2px solid #fff;
+  height: 40px;
+  position: absolute;
+  right: 5px;
+  margin-top: 2px;
+
+}
+
+.rightHederTop{
+  position: relative;
+}
+
+.containerOne{
+  height: calc(100vh - 100px);
+  /* background-color: red; */
+}
+
+.imageConatiner{
+  float: left;
+  height: 100%;
+  /* background-color: black; */
+  width: 60%;
+}
+.logoDiscription{
+  float: left;
+  height: 100%;
+  /* background-color: red; */
+  width: 40%;
+  /* background-color: #2A1649; */
+}
+.imageConatinerInner{
+  margin-top:10%;
+  margin-left: 5%;
+  width: 90%;
+  border: 2px solid black;
+  height: 80%;
+}
+
+.logoDiscriptionInner{
+  margin-top:15%;
+  margin-left: 5%;
+  width: 90%;
+  border: 2px solid black;
+  height: 80%;
+  /* background-color: #2A1649; */
+}
+
+.logoDiscriptionLogoContainer{
+  height: 100px;
+}
+
+.word{
+  margin-top: 35px;
+  font-size: 50px;
+}
+
+.one{
+  margin-left: 2%
+}
+
+.two{
+  margin-left: 30%;
+}
+
+.three{
+  margin-left: 40%;
+
+}
+
+.four{
+  margin-left: 20%;
+}
+
+.containerTwo{
+  /* background-color: red; */
+  height: 150px;
+}
+.containerTwoInner{
+  width: 33.3%;
+  height: 150px;
+  float: left;
+  position: relative;
+}
+
+.containerTwoInnerContainer{
+  height: 90%;
+  width:90%;
+  position: absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border:2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.containerTwoInnerContainerImage{
+  width: 100%;
+  height: 100%;
+}
+
+.containerTwoInnerContainerImageContainer{
+  width: 30%;
+  height: 100%;
+  /* background-color: blue; */
+  float: left;
+  overflow: hidden;
+}
+
+.containerTwoInnerContainerDescription{
+  width: 70%;
+  height: 100%;
+  /* background-color: yellow; */
+  float: left;
+  text-align: center;
+  line-height: 130px;
+  font-size: 20px;
+
+}
+
+.containerThree{
+  height: 300px;
+  /* background-color: red; */
+  margin-top: 50px;
+}
+
+.containerThreeInner{
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  /* background-color: black; */
+}
+
+.containerThreeInnerTitle{
+  margin-bottom: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  color: #fff;
+  background-color: #2A1649;
+  padding-left: 50px;
+}
+
+.containerThreeInnerContainer{
+  width: 33.3%;
+  float: left;
+  /* border: 1px solid blue; */
+  height: 64%;
+  position: relative;
+}
+
+.containerThreeInnerImageContainer{
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid black;
+  position: absolute;
+
+}
+
+.containerThreeInnerImage{
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.containerThreeInnerImageImage{
+  height: 100%;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.containerThreeInnerImageDescription{
+  color: #fff;
+  background-color: #35A7FF;
+  height: 20%;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+
+
+.vehicalDetailContainer{
+  height: 300px;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  margin-bottom: 50px;
+  width: 95%;
+}
+
+.vehicalDetailContainerLeft{
+  width: 30%;
+  height: 100%;
+  /* background-color: red; */
+  float: left;
+}
+
+.vehicalDetailContainerMiddle{
+  width: 40%;
+  height: 100%;
+  /* background-color: black; */
+  float: left;
+
+}
+
+.vehicalDetailContainerRight{
+  width: 30%;
+  height: 100%;
+  background-color: #2A1649;
+  /* background-color: #35A7FF; */
+  float: left;
+
+}
+
+.vehicalDetailContainerLeftImageContainer{
+  margin-top: 5%;
+  margin-left: 15%;
+  width: 85%;
+  height: 70%;
+  /* background-color: yellow; */
+
+}
+
+.vehicalDetailContainerPrice{
+  margin-top: 25px;
+  margin-left: 30px;
+  padding: 3px;
+  color: black;
+  background-color: yellow;
+  display: inline-block;
+}
+
+.vehicalDetailContainerLeftImage{
+  width: 100%;
+  height: auto;
+}
+
+.vehicalDetailContainerMiddleInfoContainer{
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.vehicalDetailContainerMiddleInfoContainerLeft{
+  float: left;
+  padding: 5px;
+  width: 30%;
+  /* background-color: red; */
+}
+
+.vehicalDetailContainerMiddleInfoContainerRight{
+  float: left;
+  padding: 5px;
+  width: 55%;
+  /* background-color: yellow; */
+}
+
+.vehicalDetailContainerRightInfoContainer{
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 30px;
+  color: #fff;
+}
+
+.vehicalDetailContainerRightInfoContainerLeft{
+  float: left;
+  padding: 5px;
+  width: 30%;
+  color: #fff;
+
+  /* background-color: red; */
+}
+
+.vehicalDetailContainerRightInfoContainerRight{
+  float: left;
+  padding: 5px;
+  width: 55%;
+  color: #fff;
+
+  /* background-color: yellow; */
+}
+.vehicalDetailContainerRightTitle{
+  margin-top: 40px;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.vehicalDetailContainerRightInfo{
+  margin-left: 20px;
+  margin-top: 10px;
+
+}
+
+.underline{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.vehicalDetailContainerAppend{
+  padding-top: 20px;
+}

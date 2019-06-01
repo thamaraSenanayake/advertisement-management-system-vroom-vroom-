@@ -1,0 +1,74 @@
+/* Full-width input fields */
+
+input[type=text], input[type=password],input[type=date]  {
+
+  padding: 5px;
+  margin: 5px 0 0px 5%;
+  display: inline-block;
+  border: 2px solid  #e0ebeb;
+  border-radius: 20px;
+  background:  #ffffff;
+  font-size: 13px;
+  -webkit-transition-property: width; /* Safari */
+  -webkit-transition-duration: 5s; /* Safari */
+  transition-property: border-radius;
+  transition-duration: 2s;
+}
+.small_text{
+  width: 25%;
+}
+.medium_text{
+  width: 45%;
+}
+.large_text{
+  width: 65%;
+}
+::placeholder {
+  font-size: 15px;
+
+}
+input[type=text]:focus, input[type=password]:focus,input[type=date]:focus  {
+  background-color: #f7f8f9;
+  outline: none;
+  border-radius: 8px;
+  border: 3px solid #4484CE;
+}
+
+.labelClass_textBox{
+  width: 24%;
+  display: inline-block;
+  font-size: 16px;
+}
+.fullWidth{
+  width: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.outer_textbox{
+  margin-top: 22px;
+
+}
+
+.labelClass{
+  width: 10%;
+  display: inline-block;
+
+}
+
+/* @media (max-width:600px) {
+  .labelClass_textBox{
+    width: 100%;
+    display: block;
+  }
+  input[type=text], input[type=password] {
+    width: 96%;
+    margin-left: 2%;
+  }
+} */
+
+
+@media (max-width:600px){
+  .labelClass_textBox,.small_text,.large_text,.meadium_text{
+    width: 100%;
+  }
+}
